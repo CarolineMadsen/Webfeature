@@ -1,4 +1,13 @@
 ---
+import Analog from "../components/Analog.astro";
+import Citat from "../components/Citat.astro";
+import Facts from "../components/Facts.astro";
+import Intro from "../components/Intro.astro";
+import NyBegyndelse from "../components/NyBegyndelse.astro";
+import Overskrift from "../components/Overskrift.astro";
+import Pierre from "../components/Pierre.astro";
+import Skillevej from "../components/Skillevej.astro";
+import StuckFoto from "../components/StuckFoto.astro";
 import "../styles/global.css";
 ---
 
@@ -11,11 +20,23 @@ import "../styles/global.css";
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro</h1>
-    <h2>Hej</h2>
-    <p>Hello</p>
+    <Overskrift />
+    Billeder
+    <Intro />
+    <Facts />
+    <StuckFoto />
+    Infoboks
+    <Pierre />
+    Billeder Video
+    <Skillevej />
+    Billeder
+    <NyBegyndelse />
+    <Citat />
+    <Analog />
+    Infoboks
   </body>
 </html>
+
 <script>
   import { gsap } from "gsap/dist/gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
