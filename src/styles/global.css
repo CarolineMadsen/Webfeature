@@ -1,22 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Trade+Winds&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800");
 /* Desktop */
 h1 {
   font-family: "Trade Winds", cursive;
   font-size: 250px;
+  max-inline-size: var(--size-content-1);
+  line-height: var(--font-lineheight-00);
 }
 h2 {
   font-family: "Open Sans";
   font-weight: 800;
-  font-size: 64px;
+  font-size: var(--font-size-8);
   text-transform: uppercase;
+  max-inline-size: var(--size-content-2);
 }
 h3 {
   font-family: "Trade Winds", cursive;
-  font-size: 50px;
+  font-size: var(--font-size-5);
+  max-inline-size: var(--size-content-7);
+  color: #e54dc3;
 }
 p {
   font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 25px;
+  font-weight: 300;
+  font-size: var(--font-size-3);
+  max-inline-size: var(--size-content-3);
+  line-height: var(--font-lineheight-2);
 }
