@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800");
 /* Desktop */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  margin-block: 100vh;
+}
 h1 {
   font-family: "Trade Winds", cursive;
   font-size: 250px;
   max-inline-size: var(--size-content-1);
-  line-height: var(--font-lineheight-00);
+  /* line-height: var(--font-lineheight-00); */
 }
 h2 {
   font-family: "Open Sans";
