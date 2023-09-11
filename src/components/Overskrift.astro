@@ -1,20 +1,31 @@
 ---
 ---
 
-<div class="Overskrift1">
-  <h1>Pierre</h1>
-</div>
+<section>
+  <div class="Overskrift1">
+    <h1>Pierre</h1>
+  </div>
 
-<div class="Overskrift2">
-  <h1>Falcke</h1>
-</div>
+  <div class="Overskrift2">
+    <h1>Falcke</h1>
+  </div>
+</section>
 
 <style>
+  section {
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }
   .Overskrift1 {
     color: var(--gray-12);
+    animation: var(--animation-slide-in-right);
+    animation-duration: 3s;
   }
   .Overskrift2 {
     color: #e54dc3;
+    animation: var(--animation-slide-in-left);
+    animation-duration: 3s;
   }
 </style>
 

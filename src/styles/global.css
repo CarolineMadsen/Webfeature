@@ -5,7 +5,7 @@ h1 {
   font-family: "Trade Winds", cursive;
   font-size: 250px;
   max-inline-size: var(--size-content-1);
-  line-height: var(--font-lineheight-00);
+  /* line-height: var(--font-lineheight-00); */
 }
 h2 {
   font-family: "Open Sans";
