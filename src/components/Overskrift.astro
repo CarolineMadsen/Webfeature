@@ -3,21 +3,50 @@
 
 <section class="overskrift1">
   <div>
-    <p></p>
+    <img src="public/cirkel1.svg" alt="cirkel1" />
   </div>
   <div class="overskrift2">
-    <span>Pierre</span>
-    <span>Falcke</span>
+    <span>PIERRE</span>
+    <span>FALCKE</span>
   </div>
   <div class="overskrift3">
-    <p></p>
+    <img src="public/cirkler2.svg" alt="cirkel2" />
+  </div>
+  <div>
+    <img src="public/cirkel3.svg" alt="cirkel3" />
   </div>
 </section>
 
 <style>
+  .overskrift1 {
+    display: grid;
+    grid-template-columns: auto 200px auto;
+    /* grid-template-rows: 100px 100px 100px 100px; */
+    color: rgb(236, 228, 228);
+  }
+  .overskrift2 {
+    font-size: 200px;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+  }
+
+  /* .Overskrift1 {
+    color: var(--gray-2);
+    animation: var(--animation-slide-in-right);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  } */
+  .Overskrift2 {
+    color: #e54dc3;
+    /* animation: var(--animation-slide-in-left);
+    animation-duration: 3s;
+    animation-iteration-count: infinite; */
+  }
+
   section {
     -webkit-animation: flicker-1 2s linear infinite both;
     animation: flicker-1 2s linear infinite both;
+    text-decoration-color: var(--gradient-18);
   }
   @-webkit-keyframes flicker-1 {
     0%,
@@ -78,29 +107,6 @@
     49.01% {
       opacity: 1;
     }
-  }
-
-  .overskrift1 {
-    display: grid;
-    grid-template-columns: auto 100px auto;
-    color: rgb(236, 228, 228);
-  }
-  span {
-    font-size: 200px;
-    text-orientation: upright;
-    writing-mode: vertical-lr;
-  }
-  /* .Overskrift1 {
-    color: var(--gray-2);
-    animation: var(--animation-slide-in-right);
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-  } */
-  .Overskrift2 {
-    color: #e54dc3;
-    /* animation: var(--animation-slide-in-left);
-    animation-duration: 3s;
-    animation-iteration-count: infinite; */
   }
 </style>
 
