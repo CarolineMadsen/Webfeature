@@ -4,7 +4,9 @@
 <section class="overskrift1">
   <div>
     <img src="public/cirkel1.svg" alt="cirkel1" />
+    <img src="public/cirkel3.svg" alt="cirkel3" />
   </div>
+
   <div class="overskrift2">
     <span>PIERRE</span>
     <span>FALCKE</span>
@@ -12,22 +14,23 @@
   <div class="overskrift3">
     <img src="public/cirkler2.svg" alt="cirkel2" />
   </div>
-  <div>
-    <img src="public/cirkel3.svg" alt="cirkel3" />
-  </div>
 </section>
 
 <style>
   .overskrift1 {
     display: grid;
     grid-template-columns: auto 200px auto;
-    /* grid-template-rows: 100px 100px 100px 100px; */
+    grid-template-rows: 2fr 2fr;
     color: rgb(236, 228, 228);
   }
   .overskrift2 {
     font-size: 200px;
     text-orientation: upright;
     writing-mode: vertical-lr;
+  }
+
+  img {
+    padding: 50px;
   }
 
   /* .Overskrift1 {
