@@ -2,11 +2,13 @@
 ---
 
 <div class="fackt1">
-  <h3>Pierre sælger 2 millioner fotos om året</h3>
+  <h3 class="ani">Pierre sælger 2 millioner fotos om året</h3>
 </div>
+<br />
 <div class="fackt2">
   <h3>Det svarer til én fotolicens hvert 16. sekund</h3>
 </div>
+<br />
 <div class="fackt3">
   <h3>Du ser hans fotos ca. 2 gange om dagen</h3>
 </div>
@@ -17,6 +19,12 @@
     justify-content: right;
     text-align: center;
     margin-right: 15%;
+  }
+
+  .ani {
+    opacity: 0;
+    animation: var(--animation-fade-in) forwards, var(--animation-slide-in-left);
+    animation-duration: 2s;
   }
 
   .fackt2 {
