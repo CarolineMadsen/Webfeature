@@ -8,6 +8,14 @@
 main {
   margin-block: 100vh;
 }
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(241, 181, 212, 0.47),
+    rgba(50, 23, 61, 1)
+  );
+  /* -webkit-background-clip: text; */
+}
 h1 {
   font-family: "Trade Winds", cursive;
   font-size: 250px;
