@@ -1,7 +1,10 @@
 ---
 ---
 
-<section class="grid">
+<section class="grid1">
+  <div class="img">
+    <img src="public/stuck.svg" alt="stuck" />
+  </div>
   <div class="stuckfoto">
     <h2>Hvad er stock fotos</h2>
   </div>
@@ -11,34 +14,147 @@
       aviser, til markedsføring og som indhold på websites. En licens til at
       bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad
       de skal bruges til.
-    </p>
-
-    <p>
-      Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de der
-      billeder af en læge i hvid kittel med stetoskop om halsen på en meget hvid
-      baggrund eller en meget glad dame fra virksomhedens salgs- eller
-      supportafdeling.
-    </p>
-
-    <p>
-      Stock-fotos har eksisteret i mange år. Før branchen blev digital, tilbød
-      stock-foto virksomhederne billedmapper, der kunne bestilles fra. Men
-      stock-foto branchen var én af de tidlige til at blive fuldt digitaliseret.
+      <br />
+      <br />
+      Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de der billeder
+      af en læge i hvid kittel med stetoskop om halsen på en meget hvid baggrund
+      eller en meget glad dame fra virksomhedens salgs- eller supportafdeling.
+      <br />
+      <br />
+      Stock-fotos har eksisteret i mange år. Før branchen blev digital, tilbød stock-foto
+      virksomhederne billedmapper, der kunne bestilles fra. Men stock-foto branchen
+      var én af de tidlige til at blive fuldt digitaliseret.
     </p>
   </div>
 </section>
 <style>
-  .grid {
-    display: grid;
-    justify-content: center;
-    text-align: center;
+  .img {
+    padding-top: 10%;
+    padding-left: 10%;
+    position: relative;
+  }
+  .stuckfoto {
+    padding-left: 10%;
+    text-align: left;
+    position: absolute;
+    top: 42em;
+    color: white;
   }
 
   .stuckfoto-tekst {
     display: grid;
-    justify-content: center;
-    text-align: left;
+    grid-template-columns: 600px auto auto;
+    grid-template-rows: auto auto;
+    padding-left: 10%;
+  }
+
+  .grid1 {
+    -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: var(--animation-fade-in-bloom) forwards;
+  }
+
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .img {
+    -webkit-animation: flicker-1 2s linear infinite both;
+    animation: flicker-1 2s linear infinite both;
+  }
+  @-webkit-keyframes flicker-1 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    41.99% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0;
+    }
+    43% {
+      opacity: 0;
+    }
+    43.01% {
+      opacity: 1;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    48% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    49.01% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker-1 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    41.99% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0;
+    }
+    43% {
+      opacity: 0;
+    }
+    43.01% {
+      opacity: 1;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    48% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    49.01% {
+      opacity: 1;
+    }
   }
 </style>
 
-<script></script>
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".grid1", {
+    x: -500,
+    duration: 5,
+    scrollTrigger: ".grid1",
+  });
+</script>

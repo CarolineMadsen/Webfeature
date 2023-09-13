@@ -10,11 +10,7 @@ main {
   margin-block: 100vh;
 }
 body {
-  background: linear-gradient(
-    0deg,
-    rgba(241, 181, 212, 0.47),
-    rgba(50, 23, 61, 1)
-  );
+  background: linear-gradient(0deg, rgba(241, 181, 212, 0.47), rgb(36, 17, 44));
   /* -webkit-background-clip: text; */
 }
 h1 {
