@@ -8,6 +8,8 @@ import Overskrift from "../components/Overskrift.astro";
 import Pierre from "../components/Pierre.astro";
 import Skillevej from "../components/Skillevej.astro";
 import StuckFoto from "../components/StuckFoto.astro";
+import Slider from "../components/Slider.astro";
+import StockSlider from "../components/Stock_slider.astro";
 import "../styles/global.css";
 ---
 
@@ -24,8 +26,33 @@ import "../styles/global.css";
     Billeder
     <Intro />
     <Facts />
+
     <StuckFoto />
     Infoboks
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <StockSlider />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
     <Pierre />
     Billeder Video
     <Skillevej />
@@ -33,28 +60,49 @@ import "../styles/global.css";
     <NyBegyndelse />
     <Citat />
     <Analog />
-    Infoboks
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <Slider />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </body>
+
+  <style>
+    body {
+      background-color: var(--violet-2);
+
+      background: linear-gradient(
+        0deg,
+        rgba(241, 181, 212, 0.47),
+        rgba(50, 23, 61, 1)
+      );
+      -webkit-background-clip: text;
+    }
+  </style>
+
+  <style></style>
+
+  <script>
+    import { gsap } from "gsap/dist/gsap";
+    import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+  </script>
 </html>
-
-<style>
-  body {
-    background-color: var(--violet-2);
-
-    background: linear-gradient(
-      0deg,
-      rgba(241, 181, 212, 0.47),
-      rgba(50, 23, 61, 1)
-    );
-    -webkit-background-clip: text;
-  }
-</style>
-
-<style></style>
-
-<script>
-  import { gsap } from "gsap/dist/gsap";
-  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-  gsap.registerPlugin(ScrollTrigger);
-</script>
