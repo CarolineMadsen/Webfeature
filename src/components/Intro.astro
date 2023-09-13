@@ -1,32 +1,58 @@
 ---
 ---
 
-<div class="grid">
-  <div class="intro">
-    <h2>INTRO</h2>
+<section class="intro_body">
+  <div class="intro_wrapper">
+    <img class="img_intro" src="public/img/pierre.jpeg" alt="" />
+    <div class="intro_teksbox">
+      <h2 class="intro_overskrift">Intro</h2>
+      <div class="intro-tekst">
+        <p>
+          Pierre Falcke. Du ved formentligt ikke hvem han er. Men indtil for
+          kort tid siden, så du hans værker et par gange om dagen, hver dag,
+          året rundt. Pierre Falcke var en af verdens bedst sælgende
+          stock-fotografer, og han solgte over 2 millioner fotos om året. Men
+          Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk kan han
+          ikke fordrage sit eget arbejde.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="intro-tekst">
-    <p>
-      Pierre Falcke. Du ved formentligt ikke hvem han er. Men indtil for kort
-      tid siden, så du hans værker et par gange om dagen, hver dag, året rundt.
-      Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og han
-      solgte over 2 millioner fotos om året. Men Pierre kunne ikke drømme om at
-      bruge sine egne fotos - faktisk kan han ikke fordrage sit eget arbejde.
-    </p>
-  </div>
-</div>
-
+</section>
 <style>
-  .grid {
-    display: grid;
-    justify-content: center;
-    text-align: center;
+  * {
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
   }
-
+  .intro_body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .intro_wrapper {
+    margin: 150px auto;
+    width: 70%;
+  }
+  .img_intro {
+    max-width: 500px;
+    float: left;
+    margin-left: -60px;
+  }
+  .intro_teksbox {
+    max-width: 761px;
+    justify-content: flex-end;
+    gap: -60px;
+  }
+  .intro_overskrift {
+    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
   .intro-tekst {
-    text-align: left;
-    display: grid;
-    justify-content: center;
+    color: white;
   }
 </style>
 
