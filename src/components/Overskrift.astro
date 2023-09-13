@@ -2,16 +2,19 @@
 ---
 
 <section class="overskrift1">
-  <div>
+  <div class="cirkel1">
     <img src="public/cirkel1.svg" alt="cirkel1" />
-    <img src="public/cirkel3.svg" alt="cirkel3" />
   </div>
-
   <div class="overskrift2">
     <span>PIERRE</span>
     <span>FALCKE</span>
   </div>
-  <div class="overskrift3">
+
+  <div class="cirkel 3">
+    <img src="public/cirkel3.svg" alt="cirkel3" />
+  </div>
+
+  <div class="cirkel2">
     <img src="public/cirkler2.svg" alt="cirkel2" />
   </div>
 </section>
@@ -19,14 +22,19 @@
 <style>
   .overskrift1 {
     display: grid;
-    grid-template-columns: auto 200px auto;
-    grid-template-rows: 2fr 2fr;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr 2fr;
     color: rgb(236, 228, 228);
   }
   .overskrift2 {
     font-size: 200px;
     text-orientation: upright;
     writing-mode: vertical-lr;
+  }
+
+  .cirkel2 {
+    justify-self: end;
+    align-self: end;
   }
 
   img {
@@ -49,7 +57,6 @@
   section {
     -webkit-animation: flicker-1 2s linear infinite both;
     animation: flicker-1 2s linear infinite both;
-    text-decoration-color: var(--gradient-18);
   }
   @-webkit-keyframes flicker-1 {
     0%,
