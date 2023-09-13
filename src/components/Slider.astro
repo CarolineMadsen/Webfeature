@@ -1,0 +1,117 @@
+---
+---
+
+<section class="noget">
+  <div class="slider">
+    <span style="--i:1;"><img src="src/assets/img/img1.png" alt="img1" /></span>
+    <span style="--i:2;"><img src="src/assets/img/img2.png" alt="img2" /></span>
+    <span style="--i:3;"
+      ><img src="src/assets/img/img3.png" ' alt="img3" /></span
+    >
+    <span style="--i:4;"><img src="src/assets/img/img4.png" alt="img4" /></span>
+    <span style="--i:5;"><img src="src/assets/img/img5.png" alt="img5" /></span>
+    <span style="--i:6;"><img src="src/assets/img/img11.png" alt="img5" /></span
+    >
+    <span style="--i:7;"><img src="src/assets/img/img12.png" alt="img5" /></span
+    >
+    <span style="--i:8;"><img src="src/assets/img/img13.png" alt="img5" /></span
+    >
+  </div>
+</section>
+
+<style>
+  section {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  .slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 50s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+
+  .slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(600px);
+  }
+
+  .slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+  }
+
+  .slider span:hover img {
+    transform: translateY(-50px) scale(1.2);
+    animation-play-state: paused;
+  }
+
+  @media (max-width: 700px) {
+    .slider {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      transform-style: preserve-3d;
+      animation: rotate 50s linear infinite;
+    }
+
+    .slider span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .slider {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      transform-style: preserve-3d;
+      animation: rotate 50s linear infinite;
+    }
+
+    .slider span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(280px);
+    }
+  }
+</style>
