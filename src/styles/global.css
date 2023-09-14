@@ -8,7 +8,7 @@ main {
   margin-block: 100vh;
 }
 body {
-  background: linear-gradient(0deg, rgba(42, 28, 35, 0.47), rgb(36, 17, 44));
+  background-color: #371c46;
   /* -webkit-background-clip: text; */
 }
 h1 {
@@ -16,6 +16,7 @@ h1 {
   font-size: 250px;
   max-inline-size: var(--size-content-1);
   /* line-height: var(--font-lineheight-00); */
+  color: white;
 }
 h2 {
   font-family: "Open Sans";
@@ -23,6 +24,7 @@ h2 {
   font-size: 120px;
   text-transform: uppercase;
   max-inline-size: var(--size-content-2);
+  color: white;
 }
 h3 {
   font-family: "Trade Winds", cursive;
@@ -36,4 +38,5 @@ p {
   font-size: var(--font-size-3);
   max-inline-size: var(--size-content-3);
   line-height: var(--font-lineheight-2);
+  color: white;
 }
