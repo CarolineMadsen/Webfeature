@@ -2,25 +2,36 @@
 ---
 
 <section class="intro_body">
-  <div class="intro_wrapper">
-    <img class="img_intro" src="public/img/pierre.jpeg" alt="" />
-    <div class="intro_teksbox">
-      <h2 class="intro_overskrift">Intro</h2>
-      <div class="intro-tekst">
-        <p>
-          Pierre Falcke. Du ved formentligt ikke hvem han er. Men indtil for
-          kort tid siden, så du hans værker et par gange om dagen, hver dag,
-          året rundt. Pierre Falcke var en af verdens bedst sælgende
-          stock-fotografer, og han solgte over 2 millioner fotos om året. Men
-          Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk kan han
-          ikke fordrage sit eget arbejde.
-        </p>
-      </div>
-    </div>
+  <div class="intro_billede">
+    <img class="img_intro" src="public/img/p.png" alt="" />
+  </div>
+  <div>
+    <h2 class="intro_overskrift">Intro</h2>
+    <p>
+      Pierre Falcke. Du ved formentligt ikke hvem han er. Men indtil for kort
+      tid siden, så du hans værker et par gange om dagen, hver dag, året rundt.
+      Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og han
+      solgte over 2 millioner fotos om året. Men Pierre kunne ikke drømme om at
+      bruge sine egne fotos - faktisk kan han ikke fordrage sit eget arbejde.
+    </p>
   </div>
 </section>
 <style>
-  * {
+  img {
+    width: 550px;
+  }
+  .intro_body {
+    display: grid;
+    grid-template-columns: 500px 500px 500px 500px;
+    margin: 10%;
+  }
+
+  .intro_overskrift {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 5%;
+  }
+  /* * {
     margin-left: 40px;
     margin-right: 40px;
     box-sizing: border-box;
@@ -53,7 +64,7 @@
   }
   .intro-tekst {
     color: white;
-  }
+  } */
 </style>
 
 <script></script>

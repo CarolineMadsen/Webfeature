@@ -1,11 +1,10 @@
 ---
 ---
 
+<h2 class="h2">En ny begyndelse</h2>
 <section class="grid">
-  <div class="begyndelse">
-    <h2>En ny begyndelse</h2>
-  </div>
-  <div class="begyndelse-tekst">
+  <div class="pic"><img src="public/img/p2.png" alt="" /></div>
+  <div class="tekst">
     <p>
       Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han
       har stadig lidt penge på kontoen, og studerer nu kunstfotografering på
@@ -15,7 +14,8 @@
       Et foto med masser af fejl er interessant. Jeg eksperimenterer med udstyr
       og teknik, og skaber nye visuelle udtryk. Det uperfekte er perfekt.”
     </p>
-
+  </div>
+  <div class="tekst2">
     <p>
       Karrieren begynder også så småt også at gå den rette vej: Pierre er
       begyndt at sælge fotokunst på nettet, og har udgivet sin første foto-bog
@@ -27,16 +27,39 @@
   </div>
 </section>
 <style>
+  img {
+    width: 550px;
+  }
+  .h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
   .grid {
     display: grid;
-    justify-content: center;
-    text-align: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 100px 100px 150px 100px 100px 100px;
   }
 
-  .begyndelse-tekst {
-    display: grid;
-    justify-content: center;
-    text-align: left;
+  .pic {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 10%;
+  }
+
+  .tekst {
+    /* position: absolute; */
+    grid-column-start: 3;
+    grid-row-start: 2;
+    /* margin-top: 10%; */
+    margin-left: 20%;
+  }
+
+  .tekst2 {
+    /* position: absolute; */
+    grid-column-start: 3;
+    grid-row-start: 4;
+    margin-left: 20%;
   }
 </style>
 
