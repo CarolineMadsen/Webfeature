@@ -9,6 +9,7 @@ main {
 }
 body {
   background-color: #371c46;
+  z-index: -4;
 }
 h1 {
   font-family: "Trade Winds", cursive;
