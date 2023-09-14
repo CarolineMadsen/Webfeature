@@ -1,7 +1,7 @@
 ---
 ---
 
-<section>
+<section class="video">
   <video
     playsinline
     autoplay
@@ -23,5 +23,11 @@
     align-items: center;
     justify-content: center;
     object-fit: cover;
+  }
+  @media (max-width: 760px) {
+    .video {
+      max-width: 100%%;
+      height: auto%;
+    }
   }
 </style>
