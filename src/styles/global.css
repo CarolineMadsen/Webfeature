@@ -20,7 +20,7 @@ h1 {
 h2 {
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 120px;
+  font-size: 90px;
   text-transform: uppercase;
   max-inline-size: var(--size-content-2);
   color: white;

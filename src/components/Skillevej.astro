@@ -2,10 +2,8 @@
 ---
 
 <section class="grid">
-  <div class="skillevej">
-    <h2>En skillevej</h2>
-  </div>
   <div class="skillevej-tekst">
+    <h2 class="skillevej">En skillevej</h2>
     <p>
       Pierre tjente godt det følgende årti. Men stille og roligt begyndte
       billederne også at give ham kvalme. Han kunne ikke holde sit eget arbejde
@@ -30,16 +28,28 @@
   </div>
 </section>
 <style>
+  .skillevej {
+    margin-top: 20%;
+    margin-bottom: 4%;
+  }
   .grid {
     display: grid;
-    justify-content: center;
-    text-align: center;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    /* justify-content: center;
+    text-align: center; */
+    margin-bottom: 10%;
   }
 
   .skillevej-tekst {
-    display: grid;
-    justify-content: center;
     text-align: left;
+    grid-column-start: 2;
+  }
+
+  @media (max-width: 450px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
