@@ -31,6 +31,8 @@
     letter-spacing: 3px;
     z-index: 1;
     font-family: "TradeWinds";
+    /* animation: var(--animation-fade-in) 2s forwards;
+    opacity: 0; */
   }
   .glitch:before,
   .glitch:after {
@@ -73,14 +75,6 @@
       transform: translate(0);
     }
   }
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 </style>
 
 <script>
@@ -90,7 +84,28 @@
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.from(".glitch", {
-    scrollTrigger: ".tekst",
-    toggleClass: "ease-out",
+    scrollTrigger: {
+      trigger: ".glitch-wrapper",
+      start: "top bottom",
+      end: "center center",
+      scrub: true,
+      markers: true,
+    },
+    opacity: 0,
   });
-</script> */
+  // gsap.from(".bold-3", {
+  //   // animationseffekterne øverst
+  //   yPercent: 100,
+  //   opacity: 0,
+  //   duration: 1,
+  //   stagger: 0.2,
+  //   // hvor animationen er henne på siden når man scoller
+  //   scrollTrigger: {
+  //     trigger: ".bold-3",
+  //     start: "start 50%",
+  //     end: "bottom 50%",
+  //     scrub: true,
+  //     markers: true,
+  //   },
+  // });
+</script>
