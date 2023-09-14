@@ -143,7 +143,7 @@
       border: solid 3px #00c2ff;
       height: 395px;
       width: 400px;
-      margin-top: -440px;
+      margin-top: -470px;
       margin-left: 245px;
     }
     .faktaborder3 h4,
@@ -154,9 +154,26 @@
       font-size: 16px;
     }
 
-    @media (max-with: 500px) {
+    /* @media (max-with: 500px) {
       .faktabox_grid {
         grid-template-columns: 1fr;
+      } */
+
+    @media (max-width: 1200px) {
+      .faktabox_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .faktabox1,
+      .faktabox3,
+      .faktabox2 {
+        margin: 5%;
+      }
+
+      .faktaborder3 {
+        margin-left: 13%;
+        margin-bottom: %;
       }
     }
   </style>
