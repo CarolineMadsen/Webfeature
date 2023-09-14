@@ -31,6 +31,21 @@ h3 {
   max-inline-size: var(--size-content-7);
   color: #e54dc3;
 }
+h4 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: var(--font-size-5);
+  text-transform: uppercase;
+  max-inline-size: var(--size-content-2);
+  color: white;
+}
+h5 {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: var(--font-size-4);
+  max-inline-size: var(--size-content-2);
+  color: white;
+}
 p {
   font-family: "Open Sans";
   font-weight: 300;
