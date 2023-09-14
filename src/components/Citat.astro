@@ -9,9 +9,10 @@
 </div>
 
 <style>
-  .tekst {
+  /* .tekst {
     font-size: 10em;
-  }
+    animation: var(--animation-fade-in) 5s;
+  } */
 
   .citat {
     display: grid;
@@ -19,6 +20,40 @@
     text-align: center;
     padding-bottom: 10%;
   }
+  .tekst {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-duration: 5s;
+    font-size: 10em;
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 </style>
 
-<script></script>
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".tekst", {
+    scrollTrigger: {
+      trigger: ".tekst",
+    },
+  });
+</script>
