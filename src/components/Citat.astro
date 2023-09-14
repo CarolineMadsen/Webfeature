@@ -21,11 +21,8 @@
     display: grid;
     justify-content: center;
     text-align: center;
-    padding: 10%;
-
-    animation: var(--animation-fade-in) 5s;
+    padding: 8%;
   }
-
   .glitch {
     position: relative;
     font-size: 8em;
@@ -34,9 +31,6 @@
     letter-spacing: 3px;
     z-index: 1;
     font-family: "TradeWinds";
-    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation-duration: 5s;
   }
   .glitch:before,
   .glitch:after {
@@ -77,14 +71,6 @@
     }
     to {
       transform: translate(0);
-    }
-  }
-  @-webkit-keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
     }
   }
   @keyframes fade-in {
