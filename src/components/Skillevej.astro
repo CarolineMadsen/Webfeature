@@ -107,6 +107,28 @@
     grid-column-start: 2;
   }
 
+  .skillevej {
+    -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: var(--slide-in-left) forwards;
+    animation: var(--aslide-in-left) forwards;
+    animation-duration: 10s;
+  }
+
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 690px) {
     .grid {
       display: grid;
@@ -124,4 +146,14 @@
   }
 </style>
 
-<script></script>
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".skillevej", {
+    x: -500,
+    scrollTrigger: ".skillevej",
+  });
+</script>
