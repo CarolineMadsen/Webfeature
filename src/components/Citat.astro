@@ -3,8 +3,8 @@
 
 <div class="citat">
   <h3 class="tekst">
-    “Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri Jeg
-    føler mig genfødt.”
+    “Nu kan jeg leve livet igen. <br />Jeg føler mig frisk. Jeg føler mig fri
+    Jeg føler mig genfødt.”
   </h3>
 </div>
 
@@ -25,6 +25,7 @@
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation-duration: 5s;
     font-size: 10em;
+    padding: 5%;
   }
 
   @-webkit-keyframes fade-in {
@@ -51,9 +52,8 @@
 
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.to(".tekst", {
-    scrollTrigger: {
-      trigger: ".tekst",
-    },
+  gsap.from(".tekst", {
+    scrollTrigger: ".tekst",
+    toggleClass: "ease-out",
   });
 </script>
