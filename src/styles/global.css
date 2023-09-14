@@ -39,3 +39,9 @@ p {
   line-height: var(--font-lineheight-2);
   color: white;
 }
+
+@media (max-width: 690px) {
+  h2 {
+    font-size: 300%;
+  }
+}
